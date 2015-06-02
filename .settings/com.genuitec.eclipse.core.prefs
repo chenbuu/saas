@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+validator.Checked=WebRoot/ui,src/ehcache_hibernate.xml,WebRoot/login/js/index-respond.min.js,WebRoot/login/js/index-ie10-viewport-bug-workaround.js,target,WebRoot/login/js/index-html5shiv.min.js,WebRoot/login/js/index-holder.js
+validator.Revalidate=true
+validator.Unchecked=WebRoot/ui/util

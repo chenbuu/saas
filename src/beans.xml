@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+       http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.1.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
+       ">
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:jdbc.properties"></property>
+		<property name="ignoreUnresolvablePlaceholders" value="true"></property>
+	</bean>
+	<context:annotation-config />
+	<!-- 使spring容器能够扫描相应的注解 -->
+	<context:component-scan base-package="com.sep.*" />
+
+
+	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource"
+		destroy-method="close">
+		<property name="url" value="${connection.url}" />
+		<property name="username" value="${connection.username}" />
+		<property name="password" value="${connection.password}" />
+		<property name="driverClassName" value="${connection.driverClassName}" />
+		<!-- 配置监控统计拦截的filters -->
+		<property name="filters" value="${connection.filters}" />
+
+		<property name="maxActive" value="${connection.maxActive}" />
+		<property name="initialSize" value="${connection.initialSize}" />
+		<property name="maxWait" value="${connection.maxWait}" />
+		<property name="minIdle" value="${connection.minIdle}" />
+
+		<property name="timeBetweenEvictionRunsMillis" value="${connection.timeBetweenEvictionRunsMillis}" />
+		<property name="minEvictableIdleTimeMillis" value="${connection.minEvictableIdleTimeMillis}" />
+
+		<property name="validationQuery" value="${connection.validationQuery}" />
+		<property name="testWhileIdle" value="${connection.testWhileIdle}" />
+		<property name="testOnBorrow" value="${connection.testOnBorrow}" />
+		<property name="testOnReturn" value="${connection.testOnReturn}" />
+		<property name="maxOpenPreparedStatements" value="${connection.maxOpenPreparedStatements}" />
+		<property name="removeAbandoned" value="${connection.removeAbandoned}" /> <!-- 打开removeAbandoned功能 -->
+		<property name="removeAbandonedTimeout" value="${connection.removeAbandonedTimeout}" /> <!-- 1800秒，也就是30分钟 -->
+		<property name="logAbandoned" value="${connection.logAbandoned}" /> <!-- 关闭abanded连接时输出错误日志 -->
+		<!-- 打开PSCache，并且指定每个连接上PSCache的大小 -->
+		<property name="poolPreparedStatements" value="true" />
+		<property name="maxPoolPreparedStatementPerConnectionSize"
+			value="20" />
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mappingLocations" value="classpath*:com/sep/model/*.hbm.xml" />
+		<!-- <property name="mappingResources"> <list> <value>com/data/structures/model/User.hbm.xml</value> 
+			<value>com/data/structures/model/Fillblank.hbm.xml</value> <value>com/data/structures/model/Judge.hbm.xml</value> 
+			<value>com/data/structures/model/Nature.hbm.xml</value> <value>com/data/structures/model/Profession.hbm.xml</value> 
+			<value>com/data/structures/model/Question.hbm.xml</value> <value>com/data/structures/model/Result.hbm.xml</value> 
+			<value>com/data/structures/model/Singlechoice.hbm.xml</value> <value>com/data/structures/model/Application.hbm.xml</value> 
+			</list> </property> -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">${hibernate.dialect}</prop>
+				<prop key="hibernate.show_sql">${hibernate.show_sql}</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.query.substitutions">${hibernate.query.substitutions}</prop>
+				<prop key="hibernate.default_batch_fetch_size">${hibernate.default_batch_fetch_size}</prop>
+				<prop key="hibernate.max_fetch_depth">${hibernate.max_fetch_depth}</prop>
+				<prop key="hibernate.generate_statistics">${hibernate.generate_statistics}</prop>
+				<prop key="hibernate.bytecode.use_reflection_optimizer">${hibernate.bytecode.use_reflection_optimizer}</prop>
+				<prop key="javax.persistence.validation.mode">${javax.persistence.validation.mode}</prop>
+				<prop key="hibernate.cache.use_second_level_cache">${hibernate.cache.use_second_level_cache}</prop>
+				<prop key="hibernate.cache.use_query_cache">${hibernate.cache.use_query_cache}</prop>
+				<prop key="hibernate.cache.region.factory_class">${hibernate.cache.region.factory_class}</prop>
+				<prop key="net.sf.ehcache.configurationResourceName">${net.sf.ehcache.configurationResourceName}</prop>
+				<prop key="hibernate.cache.use_structured_entries">${hibernate.cache.use_structured_entries}</prop>
+				<prop key="hibernate.connection.autocommit">${hibernate.connection.autocommit}</prop>
+				<!-- #hibernate4 分页报只进结果集不支持请求的操作的解决办法 -->
+				<prop key="hibernate.jdbc.use_scrollable_resultset">${hibernate.jdbc.use_scrollable_resultset}</prop>
+			</props>
+		</property>
+	</bean>
+
+
+	<!-- 开启AOP监听 只对当前配置文件有效 -->
+	<aop:aspectj-autoproxy expose-proxy="true" />
+
+	<!-- 开启注解事务 只对当前配置文件有效 -->
+	<tx:annotation-driven transaction-manager="txManager" />
+
+	<bean id="txManager"
+		class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<tx:advice id="txAdvice" transaction-manager="txManager">
+		<tx:attributes>
+			<tx:method name="save*" propagation="REQUIRED" />
+			<tx:method name="add*" propagation="REQUIRED" />
+			<tx:method name="create*" propagation="REQUIRED" />
+			<tx:method name="insert*" propagation="REQUIRED" />
+			<tx:method name="update*" propagation="REQUIRED" />
+			<tx:method name="merge*" propagation="REQUIRED" />
+			<tx:method name="del*" propagation="REQUIRED" />
+			<tx:method name="remove*" propagation="REQUIRED" />
+			<tx:method name="put*" propagation="REQUIRED" />
+			<tx:method name="use*" propagation="REQUIRED" />
+			<!--hibernate4必须配置为开启事务 否则 getCurrentSession()获取不到 -->
+			<tx:method name="get*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="count*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="find*" propagation="REQUIRED" read-only="true" />
+			<tx:method name="list*" propagation="REQUIRED" />
+			<tx:method name="delete*" propagation="REQUIRED" />
+		</tx:attributes>
+	</tx:advice>
+
+	<aop:config expose-proxy="true">
+		<!-- 只对业务逻辑层实施事务 -->
+		<aop:pointcut id="txPointcut"
+			expression="execution(* cn.javass..service..*.*(..))" />
+		<aop:advisor advice-ref="txAdvice" pointcut-ref="txPointcut" />
+	</aop:config>
+	<!-- 采用注解的方式注入事物 -->
+	<tx:annotation-driven transaction-manager="txManager" />
+</beans>
+

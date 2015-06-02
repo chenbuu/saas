@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache name="javass">
+	<diskStore path="C:\cache"/>
+   <defaultCache
+      maxElementsInMemory="1000"
+      eternal="false"
+      timeToIdleSeconds="3600"
+      timeToLiveSeconds="3600"
+      overflowToDisk="false">
+    </defaultCache>
+
+   <cache name="com.data.structures.model.Application"
+      maxElementsInMemory="2000"
+      eternal="false"
+      timeToIdleSeconds="3600"
+      timeToLiveSeconds="3600"
+      overflowToDisk="false">
+    </cache>
+
+
+    <cache
+        name="com.data.structures.model.Judge"
+        maxElementsInMemory="5000"
+        eternal="false"
+        timeToLiveSeconds="3600"
+        overflowToDisk="false"/>
+
+    <cache
+        name="com.data.structures.model.FillBlank"
+        maxElementsInMemory="5000"
+        eternal="true"
+        overflowToDisk="true"/>
+	<cache
+        name="com.data.structures.model.Nature"
+        maxElementsInMemory="5000"
+        eternal="true"
+        overflowToDisk="true"/>
+	<cache
+        name="com.data.structures.model.Profession"
+        maxElementsInMemory="5000"
+        eternal="true"
+        overflowToDisk="true"/>
+	<cache
+        name="com.data.structures.model.Question"
+        maxElementsInMemory="5000"
+        eternal="true"
+        overflowToDisk="true"/>
+	<cache
+        name="com.data.structures.model.Result"
+        maxElementsInMemory="5000"
+        eternal="true"
+        overflowToDisk="true"/>
+	<cache
+        name="com.data.structures.model.SingleChoice"
+        maxElementsInMemory="5000"
+        eternal="true"
+        overflowToDisk="true"/>
+</ehcache>
