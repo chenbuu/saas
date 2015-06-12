@@ -1,0 +1,800 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<META content="IE=7.0000" http-equiv="X-UA-Compatible">
+<TITLE>浙江师范大学软件学院</TITLE>
+<META content="text/html; charset=utf-8" http-equiv=Content-Type>
+<META name=keywords content=,浙江师范大学软件学院,国家示范性软件学院>
+<META name=description content=浙江师范大学软件学院综合信息平台站点描述。>
+<link rel="icon" href="../www/login/img/favicon.ico">
+<LINK rel=stylesheet type=text/css href="../www/login/css/front-css.css">
+<!--[if !IE]>导航条样式　JS<![endif]-->
+<script src="../www/ui/jquery/jquery.min.js"></script>
+
+<SCRIPT type=text/javascript src="../www/login/js/front-thcic-menu.js"></SCRIPT>
+<!--[if !IE]>图片JS<![endif]-->
+<SCRIPT type=text/javascript src="../www/login/js/front-piclx.js"></SCRIPT>
+
+<META name=GENERATOR content="MSHTML 8.00.7601.17537">
+</HEAD>
+<BODY>
+	<!--[if !IE]>top<![endif]-->
+	<!-- / top -->
+	<SCRIPT type=text/javascript>
+		/*加入收藏夹*/
+		function addfavorite(url, title) {
+			try {
+				window.external.addfavorite(url, title);
+			} catch (e) {
+				try {
+					window.sidebar.addPanel(title, url, "");
+				} catch (e) {
+					alert("加入收藏失败，请使用ctrl+d进行添加");
+				}
+			}
+		}
+		/*设为首页*/
+		function sethome(obj, vrl) {
+			try {
+				obj.style.behavior = 'url(#default#homepage)';
+				obj.setHomePage(vrl);
+			} catch (e) {
+				if (window.netscape) {
+					try {
+						netscape.security.PrivilegeManager
+								.enablePrivilege("UniversalXPConnect");
+					} catch (e) {
+						alert("此操作被浏览器拒绝！\n请在浏览器地址栏输入“about:config”并回车\n然后将 [signed.applets.codebase_principal_support]的值设置为'true',双击即可。");
+					}
+					var prefs = Components.classes['@mozilla.org/preferences-service;1']
+							.getService(Components.interfaces.nsIPrefBranch);
+					prefs.setCharPref('browser.startup.homepage', vrl);
+				}
+			}
+		}
+	</SCRIPT>
+
+	<DIV class=header_bg>
+		<DIV class="header auto">
+			<DIV class=logo>
+				<IMG src="login/img/front-logo.png" width=678 height=72>
+			</DIV>
+			<DIV class=theme>
+				<DIV class=theme_l>
+					<OBJECT
+						codeBase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0"
+						classid=clsid:D27CDB6E-AE6D-11cf-96B8-444553540000 width=127
+						height=151>
+						<PARAM NAME="movie" VALUE="web/images/fl.swf">
+						<PARAM NAME="quality" VALUE="high">
+						<PARAM NAME="wmode" VALUE="transparent">
+						<embed src="web/images/fl.swf" quality="high"
+							pluginspage="http://www.macromedia.com/go/getflashplayer"
+							type="application/x-shockwave-flash" wmode="transparent"
+							width="127" height="151"></embed>
+					</OBJECT>
+				</DIV>
+				<DIV class="theme_t fr">
+					<A onclick=sethome(this,window.location);
+						href="http://www.cst.zju.edu.cn/index.php#">设为首页</A> | <A
+						onclick=addfavorite(window.location,document.title);
+						href="http://www.cst.zju.edu.cn/index.php#">加入收藏</A> | <A
+						href="http://mail.cst.zju.edu.cn/" target=_blank>学院邮箱</A> | <A
+						href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=200">院长信箱</A>
+					| <A
+						href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=137">联系我们</A>
+				</DIV>
+			</DIV>
+		</DIV>
+		<DIV class=n_bg>
+			<DIV class="n_wk auto">
+				<DIV id=menu>
+					<UL id=nav>
+						<LI id=mainlevel_01 class=nav_main><A title=网站首页
+							href="/front.html">首页</A></LI>
+						<LI id=mainlevel_02 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=学院概况 href="http://www.cst.zju.edu.cn/index.php#">学科概况</A>
+							<UL id=sub_02>
+								<LI><A title=学院简介
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=9">学院简介</A>
+								</LI>
+								<LI><A title=学院领导
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=12">学院领导</A>
+								</LI>
+								<LI><A title=办学特色
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=10">办学特色</A>
+								</LI>
+								<LI><A title=专业方向
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=95">专业方向</A>
+								</LI>
+								<LI><A title=新闻中心
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=72">新闻中心</A>
+								</LI>
+								<LI><A title=办事指南
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=13">办事指南</A>
+								</LI>
+								<LI><A title=学院风采
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=14">学院风采</A>
+								</LI>
+								<LI><A title=联系我们
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=137">联系我们</A>
+								</LI>
+								<LI><A title=院长信箱
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=200">院长信箱</A>
+								</LI>
+							</UL></LI>
+						<LI id=mainlevel_03 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=招生信息 href="http://www.cst.zju.edu.cn/index.php#">招生信息</A>
+							<UL id=sub_03>
+								<LI><A title=招生简章
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=15">招生简章</A>
+								</LI>
+								<LI><A title=招生通知
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=16">招生通知</A>
+								</LI>
+								<LI><A title=招生问答
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=17">招生问答</A>
+								</LI>
+								<LI><A title=网上报名
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=18">网上报名</A>
+								</LI>
+								<LI><A title=考试大纲
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=19">考试大纲</A>
+								</LI>
+								<LI><A title=证书样式
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=20">证书样式</A>
+								</LI>
+								<LI><A title=创新基地
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=79">创新基地</A>
+								</LI>
+								<LI><A title=文件下载
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=65">文件下载</A>
+								</LI>
+								<LI><A title=联系我们
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=21">联系我们</A>
+								</LI>
+							</UL></LI>
+						<LI id=mainlevel_04 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=教学管理 href="http://www.cst.zju.edu.cn/index.php#">教学管理</A>
+							<UL id=sub_04>
+								<LI><A title=教务信息
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=23">教务信息</A>
+								</LI>
+								<LI><A title=论文管理
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=73">论文管理</A>
+								</LI>
+								<LI><A title=杭州在职
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=75">杭州在职</A>
+								</LI>
+								<LI><A title=专业导师
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=145">专业导师</A>
+								</LI>
+								<LI><A title=实训管理
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=83">实训管理</A>
+								</LI>
+								<LI><A title=实训平台 href="http://10.82.81.6:9999/cst/">实训平台</A>
+								</LI>
+								<LI><A title=文件下载
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=66">文件下载</A>
+								</LI>
+								<LI><A title=表格下载
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=112">表格下载</A>
+								</LI>
+							</UL></LI>
+						<LI id=mainlevel_05 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=学生思政 href="http://www.cst.zju.edu.cn/index.php#">学生思政</A>
+							<UL id=sub_05>
+								<LI><A title=重要信息
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=31">重要信息</A>
+								</LI>
+								<LI><A title=学生社团
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=28">学生社团</A>
+								</LI>
+								<LI><A title=党团工作
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=30">党团工作</A>
+								</LI>
+								<LI><A title=评奖评优
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=32">评奖评优</A>
+								</LI>
+								<LI><A title=困难资助
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=29">困难资助</A>
+								</LI>
+								<LI><A title=德育导师
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=33">德育导师</A>
+								</LI>
+								<LI><A title=学子风采
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=143">学子风采</A>
+								</LI>
+								<LI><A title=文件下载
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=67">文件下载</A>
+								</LI>
+							</UL></LI>
+						<LI id=mainlevel_06 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=实习就业 href="http://www.cst.zju.edu.cn/index.php#">实习就业</A>
+							<UL id=sub_06>
+								<LI><A title=最新通知
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=34">最新通知</A>
+								</LI>
+								<LI><A title=学生实习
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=35">学生实习</A>
+								</LI>
+								<LI><A title=学生就业
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=68">学生就业</A>
+								</LI>
+								<LI><A title=学生创业
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=113">学生创业</A>
+								</LI>
+								<LI><A title=职业发展
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=157">职业发展</A>
+								</LI>
+								<LI><A title=政策法规
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=114">政策法规</A>
+								</LI>
+								<LI><A title=文档下载
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=115">文档下载</A>
+								</LI>
+							</UL></LI>
+						<LI id=mainlevel_07 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=合作科研 href="http://www.cst.zju.edu.cn/index.php#">合作科研</A>
+							<UL id=sub_07>
+								<LI><A title=对外合作
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=37">对外合作</A>
+								</LI>
+								<LI><A title=合作培训
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=36">合作培训</A>
+								</LI>
+								<LI><A title=科研管理
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=130">科研管理</A>
+								</LI>
+								<LI><A title=智慧人才
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=144">智慧人才</A>
+								</LI>
+							</UL></LI>
+						<LI id=mainlevel_08 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=校园服务 href="http://www.cst.zju.edu.cn/index.php#">校园服务</A>
+							<UL id=sub_08>
+								<LI><A title=校园安全
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=146">校园安全</A>
+								</LI>
+								<LI><A title=院医务室
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=38">院医务室</A>
+								</LI>
+								<LI><A title=网络管理
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=39">网络管理</A>
+								</LI>
+								<LI><A title=院图书馆 href="http://10.82.56.100/">院图书馆</A></LI>
+								<LI><A title=户籍管理
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=41">户籍管理</A>
+								</LI>
+								<LI><A title=交通指南
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=42">交通指南</A>
+								</LI>
+								<LI><A title=浙大校历
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=43">浙大校历</A>
+								</LI>
+								<LI><A title=联系我们
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=13">联系我们</A>
+								</LI>
+								<LI><A title=文件下载
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=70">文件下载</A>
+								</LI>
+								<LI><A title=公文处理 href="http://10.82.1.50/">公文处理</A></LI>
+								<LI><A title=固定资产 href="http://10.82.1.50/sbgl">固定资产</A></LI>
+							</UL></LI>
+						<LI id=mainlevel_09 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=科研经费公开
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=159">科研经费公开</A>
+						</LI>
+						<LI id=mainlevel_010 class=mainlevel><A
+							style="PADDING-BOTTOM: 0px; PADDING-LEFT: 18px; PADDING-RIGHT: 18px; PADDING-TOP: 0px"
+							title=继续教育
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=172">继续教育</A>
+
+							<UL id=sub_010>
+								<LI><A title=远程教育
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=171">远程教育</A>
+								</LI>
+								<LI><A title=师资团队
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=177">师资团队</A>
+								</LI>
+								<LI><A title=教学管理
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=178">教学管理</A>
+								</LI>
+								<LI><A title=课程资源 href="http://jpkc.scezju.com/">课程资源</A></LI>
+								<LI><A title=常见问题
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=180">常见问题</A>
+								</LI>
+								<LI><A title=联系我们
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=181">联系我们</A>
+								</LI>
+								<LI><A title=学子风采
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=189">学子风采</A>
+								</LI>
+							</UL>
+							<DIV class=clear></DIV></LI>
+					</UL>
+				</DIV>
+			</DIV>
+		</DIV>
+	</DIV>
+	<!--[if !IE]>container<![endif]-->
+	<DIV class="container auto">
+		<!--[if !IE]>left<![endif]-->
+		<DIV class=con_left>
+			<!--[if !IE]>notice<![endif]-->
+			<DIV class=tz>
+				<DIV class=tz_t>
+					<H3>重要通知</H3>
+					<DIV class="tz_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=26">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=tz_b>
+					<UL>
+						<LI><A title=2015年浙江师范大学软件工程硕士（单证）招生简章（2015年6月3日更新）
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=26&amp;id=2696"
+							target=_blank>2015年浙江师范大学软件工程硕... </A></LI>
+						<LI><A title=浙江师范大学软件学院全日制软件工程专业学位研究生奖、助学金管理办法
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=26&amp;id=2686"
+							target=_blank>浙江师范大学软件学院全日制软件工... </A></LI>
+						<LI><A title="浙江师范大学软件学院（宁波）管理中心(宁波软件教育中心) 公开招聘高层次人才公告"
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=26&amp;id=2681"
+							target=_blank>浙江师范大学软件学院（宁波）管理... </A></LI>
+						<LI><A title="浙江师范大学软件学院2015年软件工程硕士（双证）统考生招生简章 "
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=26&amp;id=2229"
+							target=_blank>浙江师范大学软件学院2015年软... </A></LI>
+						<LI><A title=免学费专业学位硕士生：2014年浙江师范大学软件学院“卓越工程师计划创新基地项目”介绍
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=26&amp;id=1690"
+							target=_blank>免学费专业学位硕士生：201... </A></LI>
+						<LI><A title=学院学费交费帐户
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=26&amp;id=1618"
+							target=_blank>学院学费交费帐户 </A></LI>
+					</UL>
+				</DIV>
+			</DIV>
+			<DIV class=jwxx>
+				<DIV class=jwxx_t>
+					<H3>站内检索</H3>
+					<DIV class="jwxx_t_r fr"></DIV>
+				</DIV>
+				<FORM id=form1 method=get name=form1 action=index.php>
+					<DIV class=search>
+						<INPUT value=Index type=hidden name=c><INPUT value=search
+							type=hidden name=a> <SPAN class=s_l><INPUT
+							class=s_input
+							onclick="if(this.value=='请输入要搜索的内容'){this.value='';}"
+							value=请输入要搜索的内容 name=key></SPAN> <SPAN class=s_r><INPUT
+							class=sint value=搜索 type=submit name=sub></SPAN>
+					</DIV>
+				</FORM>
+			</DIV>
+			<!--[if !IE]>Academic information<![endif]-->
+			<DIV class=jwxx>
+				<DIV class=jwxx_t>
+					<H3>合作科研</H3>
+					<DIV class="jwxx_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=7">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=jwxx_b>
+					<UL>
+						<LI><A title=学院举行2013年度合作伙伴经验交流会
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=126&amp;id=1871"
+							target=_blank>学院举行2013年度合作伙伴... </A></LI>
+						<LI><A title=学院隆重召开2013年度政产学研合作会议
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=126&amp;id=1868"
+							target=_blank>学院隆重召开2013年度政产... </A></LI>
+					</UL>
+				</DIV>
+			</DIV>
+			<!--[if !IE]>The compilation of documents<![endif]-->
+			<DIV class=jwxx>
+				<DIV class=jwxx_t>
+					<H3>校园服务</H3>
+					<DIV class="jwxx_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=8">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=wjhb_b>
+					<UL>
+						<LI><A title=上网认证说明
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=39&amp;id=251"
+							target=_blank>上网认证说明 </A></LI>
+						<LI><A title=双证学生杭州就医须知
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=148&amp;id=2675"
+							target=_blank>双证学生杭州就医须知 </A></LI>
+						<LI><A title=软件学院召开安全工作会议暨安全稳定综治工作目标管理责任书签约仪式
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=146&amp;id=2666"
+							target=_blank>软件学院召开安全工作会议暨安... </A></LI>
+						<LI><A title=艾滋病的防控
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=147&amp;id=2420"
+							target=_blank>艾滋病的防控 </A></LI>
+						<LI><A title=宿舍楼网络端口报修注意事项
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=39&amp;id=2405"
+							target=_blank>宿舍楼网络端口报修注意事项 </A></LI>
+					</UL>
+				</DIV>
+			</DIV>
+			<!-- 办事指南 -->
+			<DIV class=bsdt>
+				<DIV class=bsdt_t>
+					<A
+						href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=13">办事指南</A>
+				</DIV>
+				<DIV class=bsdt_b>The service guide</DIV>
+			</DIV>
+			<DIV class=link>
+				<SELECT class=link_input
+					onchange="if(this.value!=''){window.open(this.value)}">
+					<OPTION selected value="">===校内链接===</OPTION>
+					<OPTION value=http://www.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学网</OPTION>
+					<OPTION value=http://jwbinfosys.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学现代教务管理系统</OPTION>
+					<OPTION value=http://libweb.zju.edu.cn/newportal>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学图书馆</OPTION>
+					<OPTION value=http://www.news.zju.edu.cn/index.php>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学求是新闻网</OPTION>
+					<OPTION value=http://www.zdxb.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学报</OPTION>
+					<OPTION value=http://www.qsc.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学求是潮</OPTION>
+					<OPTION value=http://www.su.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学学生会</OPTION>
+					<OPTION value=http://www.su.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学竺可桢学院</OPTION>
+					<OPTION value=http://www.gfs.zju.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学国防生网站</OPTION>
+					<OPTION value=http://dorm.zjxinyu.com>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学学生公寓网</OPTION>
+					<OPTION value=http://www.career.zju.edu.cn/default.html>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学就业网</OPTION>
+					<OPTION value=http://grs.zju.edu.cn />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;浙江师范大学研究生院
+					</OPTION> 
+  <OPTION value="">===校外链接===</OPTION> <OPTION 
+  value=http://www.5xue.com>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;我学网</OPTION> 
+  <OPTION 
+  value=http://www.gaokao.edu.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;中国高考网</OPTION> 
+  <OPTION 
+  value=http://gaokao.chsi.com.cn>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;阳光高考咨询</OPTION></SELECT>
+			</DIV>
+		</DIV>
+		<!--[if !IE]>right<![endif]-->
+		<DIV class=con_right>
+			<!--[if !IE]>news<![endif]-->
+			<DIV class=news>
+				<DIV class=news_t>
+					<H3>新闻中心</H3>
+					<DIV class="news_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=72">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=news_b>
+					<DIV class=news_b_l>
+						<DIV id=myFocus>
+							<DIV class=loading>
+								<SPAN>请稍候...</SPAN>
+							</DIV>
+							<!--载入画面-->
+							<UL class=pic>
+								<!--内容列表-->
+								<LI><A
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2583"><IMG
+										alt=浙江师范大学软件工程南昌硕士班举办开班仪式
+										src="浙江师范大学软件学院_files/20150325055419982.jpg" target="_blank"
+										text="" thumb=""></A>
+								<LI><A
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2461"><IMG
+										alt=我院与新昌县政府签订全面战略合作协议
+										src="浙江师范大学软件学院_files/20141226104318178.jpg" target="_blank"
+										text="" thumb=""></A>
+								<LI><A
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2429"><IMG
+										alt=学院隆重召开2014年度政产学研合作会议
+										src="浙江师范大学软件学院_files/20141209094857118.jpg" target="_blank"
+										text="" thumb=""></A>
+								<LI><A
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2430"><IMG
+										alt=学院举行2014年度合作伙伴经验交流会
+										src="浙江师范大学软件学院_files/20141209094204201.jpg" target="_blank"
+										text="" thumb=""></A>
+								<LI><A
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2194"><IMG
+										alt=浙江师范大学软件学院与上海市信息投资股份有限公司签署合作设立大数据应用研究院的战略框架协议
+										src="浙江师范大学软件学院_files/20140627091657979.jpg" target="_blank"
+										text="" thumb=""></A>
+								<LI><A
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2156"><IMG
+										alt=软件学院与IBM举行前沿技术实验室揭牌仪式
+										src="浙江师范大学软件学院_files/20140509084509305.jpg" target="_blank"
+										text="" thumb=""></A></LI>
+							</UL>
+						</DIV>
+					</DIV>
+					<DIV class=news_b_r>
+						<UL>
+							<LI><SPAN class=news_zk><A title="参观嘉兴南湖 重温党建历史"
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2660"
+									target=_blank>参观嘉兴南湖 重温党建历史 </A></SPAN><SPAN class=fr>2015-05-04</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A
+									title=软件学院召开安全工作会议暨安全稳定综治工作目标管理责任书签约仪式
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2667"
+									target=_blank>软件学院召开安全工作会议暨安全稳定综治工作目标管... </A></SPAN><SPAN class=fr>2015-05-12</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A
+									title=浙江师范大学软件工程南昌硕士班举办开班仪式
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2583"
+									target=_blank>浙江师范大学软件工程南昌硕士班举办开班仪式 </A></SPAN><SPAN class=fr>2015-03-25</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A
+									title=浙江省人大副主任毛光烈莅临软件学院指导工作
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2518"
+									target=_blank>浙江省人大副主任毛光烈莅临软件学院指导工作 </A></SPAN><SPAN class=fr>2015-03-09</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A
+									title="软件学院“浙里绽放 程就未来”2015年元旦联欢晚会暨校歌合唱比赛圆满落幕"
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2469"
+									target=_blank>软件学院“浙里绽放 程就未来”2015年元旦联欢... </A></SPAN><SPAN class=fr>2014-12-31</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A title=我院与新昌县政府签订全面战略合作协议
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2461"
+									target=_blank>我院与新昌县政府签订全面战略合作协议 </A></SPAN><SPAN class=fr>2014-12-26</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A
+									title="喜报：我院学生在2014 年宁波市大学生程序设计竞赛中获佳绩"
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2445"
+									target=_blank>喜报：我院学生在2014 年宁波市大学生程序设计... </A></SPAN><SPAN class=fr>2014-12-16</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A title=学院隆重召开2014年度政产学研合作会议
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2429"
+									target=_blank>学院隆重召开2014年度政产学研合作会议 </A></SPAN><SPAN class=fr>2014-12-09</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A title=学院举行2014年度合作伙伴经验交流会
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2430"
+									target=_blank>学院举行2014年度合作伙伴经验交流会 </A></SPAN><SPAN class=fr>2014-12-09</SPAN>
+							</LI>
+							<LI><SPAN class=news_zk><A
+									title=软件学院开展消防安全知识讲座与消防应急演练
+									href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=72&amp;id=2432"
+									target=_blank>软件学院开展消防安全知识讲座与消防应急演练 </A></SPAN><SPAN class=fr>2014-12-02</SPAN>
+							</LI>
+						</UL>
+					</DIV>
+				</DIV>
+			</DIV>
+			<!--[if !IE]>Recruit students<![endif]-->
+			<DIV class="zsxx fl">
+				<DIV class=zsxx_t>
+					<H3>招生信息</H3>
+					<DIV class="zsxx_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=2">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=zsxx_b>
+					<UL>
+						<LI><SPAN class=zsxx_zk><A
+								title=软件学院关于举办2015年“精彩IT之旅”夏令营通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=16&amp;id=2679"
+								target=_blank>软件学院关于举办2015年“精彩IT之旅... </A></SPAN><SPAN class=fr>2015-05-19</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=2015年浙江师范大学软件工程硕士（电子商务杭州在职）招生简章
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=15&amp;id=2670"
+								target=_blank>2015年浙江师范大学软件工程硕士（电子商务... </A></SPAN><SPAN class=fr>2015-05-13</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=2015年浙江师范大学软件工程硕士（移动互联网与游戏开发技术杭州在职）招生简章
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=15&amp;id=2669"
+								target=_blank>2015年浙江师范大学软件工程硕士（移动互联... </A></SPAN><SPAN class=fr>2015-05-13</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=2015年浙江师范大学软件工程硕士（常州定向在职）招生简章（2015年5月13日更新）
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=15&amp;id=2623"
+								target=_blank>2015年浙江师范大学软件工程硕士（常州定向... </A></SPAN><SPAN class=fr>2015-04-13</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=2015年浙江师范大学软件工程硕士（单证）招生简章（2015年6月3日更新）
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=15&amp;id=2497"
+								target=_blank>2015年浙江师范大学软件工程硕士（单证）招... </A></SPAN><SPAN class=fr>2015-02-02</SPAN>
+						</LI>
+					</UL>
+				</DIV>
+			</DIV>
+			<DIV class="zsxx fr">
+				<DIV class=zsxx_t>
+					<H3>实习就业</H3>
+					<DIV class="zsxx_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=6">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=zsxx_b>
+					<UL>
+						<LI><SPAN class=zsxx_zk><A title=证通股份有限公司2015年实习生招聘
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=116&amp;id=2698"
+								target=_blank>证通股份有限公司2015年实习生招聘 </A></SPAN><SPAN class=fr>2015-06-03</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=杭州图华科技有限公司招聘
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=120&amp;id=2697"
+								target=_blank>杭州图华科技有限公司招聘 </A></SPAN><SPAN class=fr>2015-06-03</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=校医院关于2015届毕业生体检的通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=34&amp;id=2693"
+								target=_blank>校医院关于2015届毕业生体检的通知 </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=宁波市安贞科技信息有限公司招聘
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=116&amp;id=2692"
+								target=_blank>宁波市安贞科技信息有限公司招聘 </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=宁波云路信息技术有限公司招聘简章
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=116&amp;id=2691"
+								target=_blank>宁波云路信息技术有限公司招聘简章 </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=IBM实习生招聘（六）
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=116&amp;id=2690"
+								target=_blank>IBM实习生招聘（六） </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=IBM实习生招聘(五）
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=116&amp;id=2688"
+								target=_blank>IBM实习生招聘(五） </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=随身教育科技有限公招聘
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=120&amp;id=2682"
+								target=_blank>随身教育科技有限公招聘 </A></SPAN><SPAN class=fr>2015-05-22</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=IBM实习生招聘（四）
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=116&amp;id=2680"
+								target=_blank>IBM实习生招聘（四） </A></SPAN><SPAN class=fr>2015-05-20</SPAN></LI>
+					</UL>
+				</DIV>
+			</DIV>
+			<DIV class="zsxx fl">
+				<DIV class=zsxx_t>
+					<H3>教务信息</H3>
+					<DIV class="zsxx_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=23">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=zsxx_b>
+					<UL>
+						<LI><SPAN class=zsxx_zk><A title=关于单证学生英语成绩
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=88&amp;id=1452"
+								target=_blank>关于单证学生英语成绩 </A></SPAN><SPAN class=fr>2013-04-16</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=单证英语补考改期的通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2694"
+								target=_blank>单证英语补考改期的通知 </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=单证英语机考补考通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2689"
+								target=_blank>单证英语机考补考通知 </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=单证英语机考5月9日行程说明
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2663"
+								target=_blank>单证英语机考5月9日行程说明 </A></SPAN><SPAN class=fr>2015-05-07</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=关于英语面试安排的通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2657"
+								target=_blank>关于英语面试安排的通知 </A></SPAN><SPAN class=fr>2015-04-29</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=非全日制专业学位研究生英语笔试（机考）考场规则
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2653"
+								target=_blank>非全日制专业学位研究生英语笔试（机考）考... </A></SPAN><SPAN class=fr>2015-04-28</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=2014--2015学年春季学期考试安排
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2649"
+								target=_blank>2014--2015学年春季学期考试安排 </A></SPAN><SPAN class=fr>2015-04-27</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=双证英语机考4月25日行程说明
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=89&amp;id=2646"
+								target=_blank>双证英语机考4月25日行程说明 </A></SPAN><SPAN class=fr>2015-04-23</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=2014～2015学年夏季学期软件项目管理方向（2015年3月份入学）课程安排及老生重修报名通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=88&amp;id=2643"
+								target=_blank>2014～2015学年夏季学期软件项目管... </A></SPAN><SPAN class=fr>2015-04-21</SPAN>
+						</LI>
+					</UL>
+				</DIV>
+			</DIV>
+			<DIV class="zsxx fr">
+				<DIV class=zsxx_t>
+					<H3>学生思政</H3>
+					<DIV class="zsxx_t_r fr">
+						<A
+							href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=4">更多&gt;&gt;</A>
+					</DIV>
+				</DIV>
+				<DIV class=zsxx_b>
+					<UL>
+						<LI><SPAN class=zsxx_zk><A title=软院IT行第一站：走访华为杭州研究所
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2695"
+								target=_blank>软院IT行第一站：走访华为杭州研究所 </A></SPAN><SPAN class=fr>2015-06-02</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=关于
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2674"
+								target=_blank京东杯?智能硬件创新与创业挑战赛的通知?>关于"京东杯"智能硬件创新与创业挑战赛的... </A></SPAN><SPAN class=fr>2015-05-18</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=【喜报】我院学生在“移动4G杯”第六届宁波市大学生网页设计大赛中获奖
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2665"
+								target=_blank>【喜报】我院学生在“移动4G杯”第六届宁... </A></SPAN><SPAN class=fr>2015-05-11</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=软件学院读书活动正式“开读”
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2662"
+								target=_blank>软件学院读书活动正式“开读” </A></SPAN><SPAN class=fr>2015-05-07</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=关于开展“与书为友、以书会友”读书活动的通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2655"
+								target=_blank>关于开展“与书为友、以书会友”读书活动的... </A></SPAN><SPAN class=fr>2015-04-28</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A title=软件学院2014级实习动员大会顺利召开
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2654"
+								target=_blank>软件学院2014级实习动员大会顺利召开 </A></SPAN><SPAN class=fr>2015-04-28</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=浙江师范大学软件学院西迁定向越野活动成功举办
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2652"
+								target=_blank>浙江师范大学软件学院西迁定向越野活动成功举办 </A></SPAN><SPAN class=fr>2015-04-27</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=浙江医药高等专科学校来我院交流学生工作信息化建设
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2638"
+								target=_blank>浙江医药高等专科学校来我院交流学生工作信... </A></SPAN><SPAN class=fr>2015-04-16</SPAN></LI>
+						<LI><SPAN class=zsxx_zk><A
+								title=关于开展2014—2015学年团内评奖评优工作的通知
+								href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=31&amp;id=2602"
+								target=_blank>关于开展2014—2015学年团内评奖评... </A></SPAN><SPAN class=fr>2015-04-02</SPAN>
+						</LI>
+					</UL>
+				</DIV>
+			</DIV>
+		</DIV>
+		<!--[if !IE]>Students charisma<![endif]-->
+		<div class="container auto">
+	<div class="xzfc">
+		<div class="xzfc_t">
+			<h3>学科风采</h3>
+			<div class="xzfc_t_r fr"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=143">更多&gt;&gt;</a></div>
+		</div>
+		<div class="xzfc_b">
+			<div id="demo">
+				<div id="indemo">
+					<div id="demo1">
+						<div class="cgpt_wk">
+							<ul>
+								<li>
+								<div class="cgpt_img_bg"><img src="../www/view/discipline-style/img/20121115084252938.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1191" target="_blank">校园生活...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="../www/view/discipline-style/img/20121115084537391.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1190" target="_blank">学位授予仪式...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="../www/view/discipline-style/img/20121115084955754.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1189" target="_blank">学术讲座...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="../www/view/discipline-style/img/20121115085054412.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1188" target="_blank">校园文化论坛...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="../www/view/discipline-style/img/20121115085136266.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1187" target="_blank">我们毕业了...</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="demo2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+				var speed=30; //数字越大速度越慢
+				var tab=document.getElementById("demo");
+				var tab1=document.getElementById("demo1");
+				var tab2=document.getElementById("demo2");
+				tab2.innerHTML=tab1.innerHTML;
+				function Marquee(){
+				if(tab2.offsetWidth-tab.scrollLeft<=0)
+				tab.scrollLeft-=tab1.offsetWidth;
+				else{
+				tab.scrollLeft++;
+				}
+				}
+				var MyMar=setInterval(Marquee,speed);
+				tab.onmouseover=function() {clearInterval(MyMar);};
+				tab.onmouseout=function() {MyMar=setInterval(Marquee,speed);};
+		</script>
+	</div>
+</div>
+	<!--[if !IE]>footer<![endif]-->
+	<DIV class="footer auto">
+		<DIV class=cop>
+			版权所有 浙江师范大学软件学院 Copyright 2016 www.zjnu.edu.cn All Rights Reserved
+			浙ICP备05001954号<BR>
+			<DIV class="yncc auto">
+				<A href="http://www.zjnu.edu.cn" target=_blank><IMG
+					src="../www/login/img/favicon.ico" width=57 height=17></A>
+			</DIV>
+		</DIV>
+	</DIV>
+</BODY>
+</HTML>

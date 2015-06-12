@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* === Custom font === */
+
+div.graphic{
+	
+	position:absolute;
+	top:80px;
+	left:0px;
+	background:url(../img/500.png) top left no-repeat;
+	width:494px;
+	height:331px;
+	
+}

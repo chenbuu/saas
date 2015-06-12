@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>浙江师范大学软件学院</title>
+<link href="/sep/www/view/discipline-style/css/discipline-style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container auto">
+	<div class="xzfc">
+		<div class="xzfc_t">
+			<h3>学科风采</h3>
+			<div class="xzfc_t_r fr"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=tlist&amp;catid=143">更多&gt;&gt;</a></div>
+		</div>
+		<div class="xzfc_b">
+			<div id="demo">
+				<div id="indemo">
+					<div id="demo1">
+						<div class="cgpt_wk">
+							<ul>
+								<li>
+								<div class="cgpt_img_bg"><img src="/sep/www/view/discipline-style/img/20121115084252938.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1191" target="_blank">校园生活...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="/sep/www/view/discipline-style/img/20121115084537391.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1190" target="_blank">学位授予仪式...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="/sep/www/view/discipline-style/img/20121115084955754.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1189" target="_blank">学术讲座...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="/sep/www/view/discipline-style/img/20121115085054412.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1188" target="_blank">校园文化论坛...</a></span>
+								</li><li>
+								<div class="cgpt_img_bg"><img src="/sep/www/view/discipline-style/img/20121115085136266.jpg" height="97" width="126"></div>
+								<span class="cgpt_wz"><a href="http://www.cst.zju.edu.cn/index.php?c=Index&amp;a=detail&amp;catid=143&amp;id=1187" target="_blank">我们毕业了...</a></span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div id="demo2">
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+				var speed=30; //数字越大速度越慢
+				var tab=document.getElementById("demo");
+				var tab1=document.getElementById("demo1");
+				var tab2=document.getElementById("demo2");
+				tab2.innerHTML=tab1.innerHTML;
+				function Marquee(){
+				if(tab2.offsetWidth-tab.scrollLeft<=0)
+				tab.scrollLeft-=tab1.offsetWidth;
+				else{
+				tab.scrollLeft++;
+				}
+				}
+				var MyMar=setInterval(Marquee,speed);
+				tab.onmouseover=function() {clearInterval(MyMar);};
+				tab.onmouseout=function() {MyMar=setInterval(Marquee,speed);};
+		</script>
+	</div>
+</div>
+</body></html>

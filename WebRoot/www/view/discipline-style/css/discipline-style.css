@@ -1,0 +1,54 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/**/  
+   body{font-size:13px;font-family:Arial, Helvetica, sans-serif;margin:0;padding:0;background:#f2f2f2;color:#262427; }
+   form,li,p,ul,h3,h2,span,dl,dt,dd,ol{margin:0;padding:0;border:none;}
+   input,select{line-height:16px;font-size:13px;margin:0;padding:0;}
+   textarea{line-height:16px;font-size:12px;}
+   img{border:none;display:block;}
+   li{list-style-type:none;}
+
+   .fl{float:left;}
+   .fr{float:right;}
+   .tc{text-align:center;}
+   .tr{text-align:right;}
+   .tl{text-align:left;}
+   .auto{margin:0 auto;}
+   .inline{display:inline;}
+   .block{display:block;}
+   .clear{clear:both;}
+   
+/*container*/
+
+	.container{width:1000px;}
+
+/*Students charisma*/
+
+	.xzfc{width:1000px;float:left;margin-top:11px;}
+	.xzfc_t{width:1000px;float:left;height:35px;background:null repeat-x left top;}
+	.xzfc_t h3{width:99px;height:35px;line-height:35px;float:left;background:null no-repeat left top;text-align:center;font-size:14px;font-weight:bold;color:#fff;font-family:"幼圆" ,"宋体" ,Arial, Helvetica, sans-serif;}
+	.xzfc_t_r{height:35px;line-height:30px;background:null no-repeat right top;padding-right:5px;}
+	.xzfc_t_r a{font-size:12px;color:#666;text-decoration:none;}
+	.xzfc_t_r a:hover{font-size:12px;color:#e58100;text-decoration:none;}
+	.xzfc_b{width:978px;float:left;padding:0 10px;background:#fff;border:1px solid #e8e8e8;border-top:none;}
+
+	#demo {overflow:hidden;height:150px;width:978px;}
+	#demo img {float:left;}
+	#indemo {float: left; width: 800%;}
+	#demo1 {float: left;}
+	#demo2 {float: left;}
+
+	.cgpt_wk{height:145px;float:left;padding-top:5px;}
+	.cgpt_wk li{width:146px;float:left;margin-left:15px;}
+	.cgpt_img_bg{width:126px;height:97px;float:left;padding:10px;background:null no-repeat left top;}
+	.cgpt_wz{width:146px;float:left;height:25px;line-height:25px;text-align:center;color:#333;font-size:12px;text-decoration:none;}
+	.cgpt_wz a{color:#333;font-size:12px;text-decoration:none;}
+	.cgpt_wz a:hover{color:#e58100;font-size:12px;text-decoration:none;}
+
+	.lm_xzfc{width:752px;float:left;}
+	.lm_xzfc li{width:160px;float:left;height:155px;padding-left:22px;margin-top:20px;}
+	.lm_xzfc img{width:160px;float:left;height:130px;}
+	.pic_wz{width:160px;height:30px;line-height:30px;text-align:center;color:#333;font-size:12px;float:left;}
+	.pic_wz a{color:#333;font-size:12px;text-decoration:none;}
+	.pic_wz a:hover{color:#e58100;font-size:12px;text-decoration:none;}

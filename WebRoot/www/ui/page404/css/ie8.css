@@ -1,0 +1,21 @@
+DIV.search {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DIV.search INPUT[type=text] {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; WIDTH: 340px; PADDING-RIGHT: 20px; HEIGHT: 15px; PADDING-TOP: 10px
+}
+DIV.search INPUT[type=submit] {
+	HEIGHT: 45px
+}
+DIV.not-found-text {
+	TOP: 65px
+}
+DIV.planet {
+	Z-INDEX: -1
+}
+DIV.dog {
+	Z-INDEX: 1000
+}
+DIV.dog-bubble {
+	FILTER: progid:DXImageTransform.Microsoft.Alpha(opacity=0); PADDING-TOP: 35px
+}

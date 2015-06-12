@@ -1,0 +1,140 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<base href="/sep/www/" />
+<link rel="icon" href="../www/login/img/favicon.ico">
+
+<title>403页面未找到</title>
+
+<!-- Custom styles for this template -->
+<link href="../www/ui/page404/css/main.css" rel="stylesheet"
+	media="screen, projection">
+<link href="../www/ui/page404/css/tipsy.css" rel="stylesheet"
+	media="all">
+<link href="../www/ui/page404/css/403.css" rel="stylesheet"
+	media="screen, projection">
+
+<!--[if lt IE 9]>
+	<link href="../www/ui/404/css/ie8.css" rel="stylesheet" >
+	<![endif]-->
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<!-- 404 graphic -->
+		<div class="graphic"></div>
+		<!-- 404 graphic -->
+		<!-- Not found text -->
+		<div class="not-found-text">
+			<h1 class="not-found-text">File not found, sorry!</h1>
+		</div>
+		<!-- Not found text -->
+
+		<!-- search form -->
+		<div class="search">
+			<form name="search" method="get" action="../www/front.html">
+				<input type="text" name="search" value="Search ..."> <input
+					class="with-tooltip" type="submit" name="submit" value=""
+					original-title="Search!">
+			</form>
+		</div>
+		<!-- search form -->
+
+		<!-- top menu -->
+		<div class="top-menu">
+			<a href="../www/front.html" class="with-tooltip"
+				original-title="Return to the home page">Home</a> | <a
+				href="../www/front.html" class="with-tooltip"
+				original-title="Navigate through our sitemap">Sitemap</a> | <a
+				href="../www/front.html" class="with-tooltip"
+				original-title="Contact us!">Contact</a> | <a
+				href="../www/front.html" class="with-tooltip"
+				original-title="Request additional help">Help</a>
+		</div>
+		<!-- top menu -->
+
+		<div class="dog-wrapper">
+			<!-- dog running -->
+			<div class="dog" style="background-position: -80px -2px;"></div>
+			<!-- dog running -->
+
+			<!-- dog bubble talking -->
+			<div class="dog-bubble" style="opacity: 0; bottom: 0px;">
+				<p>
+					<br> Don't worry! I'm on it!
+				</p>
+			</div>
+
+			<!-- The dog bubble rotates these -->
+			<div class="bubble-options">
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">Are you
+					lost, bud? No worries, I'm an excellent guide!</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					<br> Arf! Arf!
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					<br> Don't worry! I'm on it!
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					I wish I had a cookie<br> <img style="margin-top:8px"
+						src="../www/ui/page404/img/cookie.png" alt="cookie">
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					<br> Geez! This is pretty tiresome!
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					<br> Am I getting close?
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">Or am I
+					just going in circles? Nah...</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					<br> OK, I'm officially lost now...
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">
+					I think I saw a <br> <img style="margin-top:8px"
+						src="../www/ui/page404/img/cat.png" alt="cat">
+				</p>
+				<p class="dog-bubble" style="opacity: 0; bottom: 0px;">What are
+					we supposed to be looking for, anyway? @_@</p>
+			</div>
+			<!-- The dog bubble rotates these -->
+			<!-- dog bubble talking -->
+		</div>
+
+		<!-- planet at the bottom -->
+		<div class="planet"
+			style="transform: rotate(-175.699999999994deg); -webkit-transform: rotate(-351.399999999989deg);"></div>
+		<!-- planet at the bottom -->
+	</div>
+
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="../www/ui/jquery/jquery.min.js"></script>
+	<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+	<script src="../www/ui/page404/js/custom-scripts.js"></script>
+	<script src="../www/ui/page404/js/jquery.tipsy.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			universalPreloader();
+		});
+		$(window).load(function() {
+			//remove Universal Preloader
+			universalPreloaderRemove();
+			rotate();
+			dogRun();
+			dogTalk();
+			//Tipsy implementation
+			$('.with-tooltip').tipsy({
+				gravity : $.fn.tipsy.autoNS
+			});
+		});
+	</script>
+</body>
+</html>
