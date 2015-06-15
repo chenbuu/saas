@@ -11,6 +11,7 @@ import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.sep.service.DicService;
 import com.sep.service.FileInfoService;
+import com.sep.service.NewsService;
 import com.sep.service.PermInstanceService;
 import com.sep.service.PermissionService;
 import com.sep.service.RoleService;
@@ -48,6 +49,9 @@ public class BaseAction<T> extends ActionSupport {
 
 	@Resource
 	protected TenantService tenantService;
+	
+	@Resource
+	protected NewsService newsService;
 
 	/**
 	 * TODO(以下代码无需修改)

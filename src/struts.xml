@@ -50,6 +50,11 @@
                 <param name="root">dataMap</param>
             </result>
 		</action>
+		<action name="news_*" class="com.sep.action.NewsAction" method="{1}">
+			<result type="json">
+                <param name="root">dataMap</param>
+            </result>
+		</action>
 	</package>
 	<!-- 以下是上传下载配置 -->
 	<package name="Upload" extends="json-default" namespace="/">

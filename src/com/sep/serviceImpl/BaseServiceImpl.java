@@ -12,6 +12,7 @@ import org.springframework.stereotype.Service;
 import com.sep.dao.BaseDao;
 import com.sep.dao.DicDao;
 import com.sep.dao.FileInfoDao;
+import com.sep.dao.NewsDao;
 import com.sep.dao.PermInstanceDao;
 import com.sep.dao.PermissionDao;
 import com.sep.dao.RoleDao;
@@ -53,6 +54,8 @@ public abstract class BaseServiceImpl<T> implements BaseService<T> {
 	@Resource
 	protected TenantDao tenantDao;
 	
+	@Resource
+	protected NewsDao newsDao;
 	
 	/**
 	 * TODO(以下代码无需修改)
